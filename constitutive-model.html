@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Constitutive Model | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</title>
+  <meta name="description" content="1 Constitutive Model | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Constitutive Model | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Constitutive Model | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  
+  
+  
+
+<meta name="author" content="Kyeong Sun Kim" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="calibration.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="templates/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="constitutive-model.html"><a href="constitutive-model.html"><i class="fa fa-check"></i><b>1</b> Constitutive Model</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#strainsoftening-stiffnesshardening-model"><i class="fa fa-check"></i><b>1.1</b> Strain—Softening Stiffness—Hardening Model</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function"><i class="fa fa-check"></i><b>1.1.1</b> Yield function</a></li>
+<li class="chapter" data-level="1.1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function"><i class="fa fa-check"></i><b>1.1.2</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening-function"><i class="fa fa-check"></i><b>1.1.3</b> Hardening function</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#nonassociated-flow-rule-na"><i class="fa fa-check"></i><b>1.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#extended-mohrcoulomb-model-emc"><i class="fa fa-check"></i><b>1.3</b> Extended Mohr—Coulomb Model (EMC)</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="constitutive-model.html"><a href="constitutive-model.html#comparison-between-associated-and-non-associated-flow-rule-in-plastic-model"><i class="fa fa-check"></i><b>1.3.1</b> Comparison between associated and non-associated flow rule in plastic model</a></li>
+<li class="chapter" data-level="1.3.2" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function-1"><i class="fa fa-check"></i><b>1.3.2</b> Yield function</a></li>
+<li class="chapter" data-level="1.3.3" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function-1"><i class="fa fa-check"></i><b>1.3.3</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.3.4" data-path="constitutive-model.html"><a href="constitutive-model.html#flow-rule"><i class="fa fa-check"></i><b>1.3.4</b> Flow rule</a></li>
+<li class="chapter" data-level="1.3.5" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening"><i class="fa fa-check"></i><b>1.3.5</b> Hardening</a></li>
+<li class="chapter" data-level="1.3.6" data-path="constitutive-model.html"><a href="constitutive-model.html#soil-parameters"><i class="fa fa-check"></i><b>1.3.6</b> Soil Parameters</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="calibration.html"><a href="calibration.html"><i class="fa fa-check"></i><b>2</b> Calibration and Validation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="calibration.html"><a href="calibration.html#drained-triaxial-test"><i class="fa fa-check"></i><b>2.1</b> Drained Triaxial Test</a></li>
+<li class="chapter" data-level="2.2" data-path="calibration.html"><a href="calibration.html#soil-parameters-1"><i class="fa fa-check"></i><b>2.2</b> Soil Parameters</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="calibration.html"><a href="calibration.html#strainsoftening-stiffnesshardening-model-1"><i class="fa fa-check"></i><b>2.2.1</b> Strain—Softening Stiffness—Hardening Model</a></li>
+<li class="chapter" data-level="2.2.2" data-path="calibration.html"><a href="calibration.html#nonassociated-flow-rule-na-1"><i class="fa fa-check"></i><b>2.2.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="2.2.3" data-path="calibration.html"><a href="calibration.html#extended-mohrcoulomb-model-emc-1"><i class="fa fa-check"></i><b>2.2.3</b> Extended Mohr—Coulomb Model (EMC)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="calibration.html"><a href="calibration.html#convergence-criteria"><i class="fa fa-check"></i><b>2.3</b> Convergence Criteria</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="calibration.html"><a href="calibration.html#mesh-convergence"><i class="fa fa-check"></i><b>2.3.1</b> Mesh Convergence</a></li>
+<li class="chapter" data-level="2.3.2" data-path="calibration.html"><a href="calibration.html#boundary-convergence"><i class="fa fa-check"></i><b>2.3.2</b> Boundary Convergence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="result.html"><a href="result.html"><i class="fa fa-check"></i><b>3</b> Results</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="result.html"><a href="result.html#parametric-study"><i class="fa fa-check"></i><b>3.1</b> Parametric Study</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="result.html"><a href="result.html#effect-of-embedment-depth-ratio-fracdb"><i class="fa fa-check"></i><b>3.1.1</b> Effect of Embedment Depth Ratio <span class="math inline">\(\frac{D}{B}\)</span></a></li>
+<li class="chapter" data-level="3.1.2" data-path="result.html"><a href="result.html#effect-of-width-b"><i class="fa fa-check"></i><b>3.1.2</b> Effect of Width <span class="math inline">\(B\)</span></a></li>
+<li class="chapter" data-level="3.1.3" data-path="result.html"><a href="result.html#shear-dissipation"><i class="fa fa-check"></i><b>3.1.3</b> Shear Dissipation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="result.html"><a href="result.html#comparison-with-previous-researchers"><i class="fa fa-check"></i><b>3.2</b> Comparison with Previous Researchers</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html"><i class="fa fa-check"></i><b>4</b> Comparison with Centrifuge Experiment</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#comparison-of-the-centrifuge-test-results-with-the-chosen-model"><i class="fa fa-check"></i><b>4.1</b> Comparison of the centrifuge test results with the chosen model</a></li>
+<li class="chapter" data-level="4.2" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#difference-with-the-anchor-theory"><i class="fa fa-check"></i><b>4.2</b> Difference with the anchor theory</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="list-of-loaddisplacement-curves.html"><a href="list-of-loaddisplacement-curves.html"><i class="fa fa-check"></i><b>A</b> List of Load—Displacement Curves</a></li>
+<li class="chapter" data-level="" data-path="references-references.html"><a href="references-references.html"><i class="fa fa-check"></i>(REFERENCES) References</a></li>
+<li class="chapter" data-level="B" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>B</b> REFERENCES</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><p>Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</p></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="constitutive-model" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Constitutive Model</h1>
+<div style="page-break-after: always;"></div>
+<p>Here is a brief description of the constitutive models:<br />
+1. Strain—Softening Stiffness—Hardening Model by Sakai and Tanaka, 1993<br />
+2. Typical Mohr-Coulomb with Non-associated Flow<br />
+3. Extended Mohr-Coulomb Model by David Muir Wood, 2004</p>
+<div id="strainsoftening-stiffnesshardening-model" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Strain—Softening Stiffness—Hardening Model</h2>
+<p>It is assumed that the yield function <span class="math inline">\(F\)</span> is defined by the stress <span class="math inline">\(\vec{\sigma}\)</span> and the soil parameter <span class="math inline">\(\chi\)</span> (Tanaka and Sakai, 1993):<br />
+<span class="math inline">\(F(\vec{\sigma},\alpha(\chi))=0\)</span></p>
+<p>In order to avoid numerical instability due to singularity of the non-associated Mohr-Coulomb model, a constitutive model based on the yield function of M-C type and the plastic potential function of Draker-Prager type is employed.</p>
+<p>For predicting deformations in a post-peak regime, the elastic- strain-softening plastic model is developed. The yield function is given by the following expression.</p>
+<div id="yield-function" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Yield function</h3>
+<p><span class="math display">\[
+  F(\vec{\sigma},\alpha(\chi)) = 3\alpha(\chi)p&#39;+\frac{\sqrt{J_2}}{g(\theta)}-c(\chi) = 0
+\]</span></p>
+</div>
+<div id="plastic-potential-function" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Plastic potential function</h3>
+<p><span class="math display">\[
+  G(\vec{\sigma},\alpha&#39;(\chi)) = 3\alpha^{&#39;}(\chi)p&#39;+\sqrt{J_2}-c(\chi) = 0
+\]</span></p>
+<p><span class="math display">\[
+  \chi = \int \delta\varepsilon^{p}
+\]</span></p>
+<p><span class="math display">\[
+  (\delta\varepsilon^{p})^2 = 2[(\delta\epsilon_x^{p})^2+(\delta\epsilon_y^{p})^2+(\delta\epsilon_z^{p})^2+]+(\delta\gamma^{p})^2
+\]</span>
+, where<br />
+<span class="math inline">\(p^{&#39;}\)</span> is mean stress,<br />
+<span class="math inline">\(J_2\)</span> is second invariant of deviatoric stress,<br />
+<span class="math inline">\(\chi\)</span> is soil hardening parameter,<br />
+<span class="math inline">\(c(\chi)\)</span> is apparent cohesion function,<br />
+<span class="math inline">\(\delta \varepsilon_{x,y,z}^{p} , \delta \gamma^{p}\)</span> is incremental deviatoric plastic strains.</p>
+<p>In case of the Mohr-Coulomb model, <span class="math inline">\(g(\theta)\)</span> is given by:</p>
+<p><span class="math display">\[
+  g(\theta) = \frac{3-sin\phi}{2\sqrt{3}cos\theta -2sin\theta sin\phi}
+\]</span>
+, where<br />
+<span class="math inline">\(\theta\)</span> is Lode angle; if triaxial compression, <span class="math inline">\(=-30 ^{\circ}\)</span><br />
+<span class="math inline">\(\phi\)</span> is mobilized internal friction angle.</p>
+</div>
+<div id="hardening-function" class="section level3" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Hardening function</h3>
+<p>The simple strain-softening functions are specified and expressed as a function of material constants. (Tanaka and Sakai, 1993)</p>
+<p><span class="math display">\[
+\alpha(\chi) = {(\frac{2\sqrt{a\chi }}{\chi +a})}^m \alpha_p\; \\ (hardening \; regime;\; \chi \leq a) 
+\]</span></p>
+<p><span class="math display">\[
+\alpha(\chi) = \alpha_r + (\alpha_p - \alpha_r) exp\{-(\frac{\chi-a}{b})\}\; \\ (softening \; regime;\; \chi &gt; a) 
+\]</span>
+, where<br />
+<span class="math inline">\(a, b, m\)</span> are soil parameters.</p>
+<p>Similar expressions are used by de Borst (1986).</p>
+<p><span class="math display">\[
+\alpha_p = \frac{2 sin \phi_p}{\sqrt{3}(3-sin\phi_p)}
+\]</span></p>
+<p><span class="math display">\[
+\alpha_r = \frac{2 sin \phi_r}{\sqrt{3}(3-sin\phi_r)}
+\]</span>
+, where<br />
+<span class="math inline">\(\phi_{p,r}\)</span> are peak and residual friction angle, respectively.</p>
+</div>
+</div>
+<div id="nonassociated-flow-rule-na" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Nonassociated Flow Rule (NA)</h2>
+<p>Since there may be a range of possible solutions, each associated with a different pattern of localization and all of which are entirely valid, it can be expected that any numerical solution will be very sensitive to both physical imperfections as well as round-off errors and the exact sequence in which the procedures defining the solution scheme are carried out. In the end, the result is a load-displacement response that tends to be rather oscillatory.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="myfigureeeeee/Load-displacement%20response%20for%20strip%20footing%20on%20a%20weightless%20soil.PNG" alt="Load-displacement response for strip footing on a weightless soil (After  Krabbenhoft et al., 2012)" width="100%" />
+<p class="caption">
+Figure 1.1: Load-displacement response for strip footing on a weightless soil (After Krabbenhoft et al., 2012)
+</p>
+</div>
+<p>The basic idea behind the formulation derives from the structure of the internal dissipation associated with constitutive models. Let us assume a yield function of the type:</p>
+<p><span class="math display">\[
+F = Mp+q-c
+\]</span>
+, where<br />
+<span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> are mean and deviatoric stress, <span class="math inline">\(M\)</span> is a friction coeffcieint, and <span class="math inline">\(c\)</span> is cohesion.</p>
+<p>The plastic potential function is given by:<br />
+<span class="math display">\[
+G = Np +q
+\]</span>
+, where <span class="math inline">\(N \leq M\)</span> is a dilation coefficient.</p>
+<p>In <span class="math inline">\(p-q\)</span> triaxial space, the plastic strain rates are given by:</p>
+<p><span class="math display">\[
+\delta \varepsilon_v^{p} = \delta \lambda \frac{\partial G}{\partial p} = \delta \lambda N \\
+\delta \varepsilon_s^{p} = \delta \lambda \frac{\partial G}{\partial p} = \delta \lambda
+\]</span>
+, where
+<span class="math inline">\(\delta\)</span> denotes time increment, <span class="math inline">\(\varepsilon_v^{p}\)</span> and <span class="math inline">\(\varepsilon_s^{p}\)</span> are volumetic and deviatoric plastic strains conjugate to <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span>, respectively.</p>
+<p>The dissipation <span class="math inline">\(D\)</span> is given by:</p>
+<p><span class="math inline">\(\begin{aligned} D &amp;= p \varepsilon_v^{p} + q \varepsilon_s^{p} \\  &amp;= (Nq+q) \delta \lambda \\  &amp;= [c-(M-N)p]\delta \lambda \\  &amp;= [c - (M-N)p]\varepsilon_s^{p} \end{aligned}\)</span></p>
+<p>The above-mentioned parameters are all related with the confining pressure, which can be easily illustraed with the figure below:</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="myfigureeeeee/confiningpressure.PNG" alt="Microscopic origins of friction as plastic shearing of asperities. A higher confining pressure implies a higher degree of interlocking of the asperities and thereby a higher apparent shear strength (After  Krabbenhoft et al., 2012)" width="100%" />
+<p class="caption">
+Figure 1.2: Microscopic origins of friction as plastic shearing of asperities. A higher confining pressure implies a higher degree of interlocking of the asperities and thereby a higher apparent shear strength (After Krabbenhoft et al., 2012)
+</p>
+</div>
+</div>
+<div id="extended-mohrcoulomb-model-emc" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Extended Mohr—Coulomb Model (EMC)</h2>
+<p>The elastic-perfectly plastic Mohr-Coulomb model is widely used for geotechnical analysis. It provides very crude match to actual shearing behavior of soils. A natural extension is to create a hardening version of the M-C model in which the size of the yield surface varies in some nonlinear way with the development of plastic strain. In the model to be described as hardening will be linked only with distortional strain. It is useful for modelling sands , where it is rearrangement of the rather particles that dominates the response and irrecoverable volumetric changes are essentially linked by this rearrangement of particles (Wood, 2004).</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="myfigureeeeee/Plastic%20potential%20curves%20(solid%20lines)%20and%20yield%20loci%20(dashed%20lines)%20in%20elastic-hardening%20plastic%20Mohr-Coulomb%20model.PNG" alt="Plastic potential curves (solid lines) and yield loci (dashed lines) in elastic-hardening plastic Mohr-Coulomb modele" width="100%" />
+<p class="caption">
+Figure 1.3: Plastic potential curves (solid lines) and yield loci (dashed lines) in elastic-hardening plastic Mohr-Coulomb modele
+</p>
+</div>
+<p>Following Taylor’s (1948) proposal of a link between dilatancy and mobilized friction in a shear box test, stress—dilatancy equation expressed in terms of total strain increments is obtained.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="myfigureeeeee/Hardening,%20compaction%20and%20dilation%20in%20the%20HMC%20model.PNG" alt="Hardening, compaction and dilation in the HMC model" width="100%" />
+<p class="caption">
+Figure 1.4: Hardening, compaction and dilation in the HMC model
+</p>
+</div>
+<div id="comparison-between-associated-and-non-associated-flow-rule-in-plastic-model" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Comparison between associated and non-associated flow rule in plastic model</h3>
+<p>In the elastic-perfectly-plastic Mohr-Coulomb model, it is commonly assumed that the plastic potential takes the same form as the yield surface, but with the slope defined by a dilation angle <span class="math inline">\(\psi\)</span> rather than a friction angle. If this assumption is adopted, then the dirction of the plastic strain increment <span class="math inline">\(\delta \varepsilon^{p}\)</span> would be normal to a set of parallel lines by the dilation angle. If normality rule were assumed, radical difference between the slope of yield criterion line and the plastic potental contour is observed (J.P. Doherty and D. Muir Wood, 2013).</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="myfigureeeeee/Elastic-perfectly%20plastic%20Mohr-Coulomb%20model%20(a)%20yield%20and%20failure%20locus,%20(b)%20plastic%20potentials.PNG" alt="Elastic-perfectly plastic Mohr-Coulomb model (a) yield and failure locus, (b) plastic potentials" width="100%" />
+<p class="caption">
+Figure 1.5: Elastic-perfectly plastic Mohr-Coulomb model (a) yield and failure locus, (b) plastic potentials
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-7"></span>
+<img src="myfigureeeeee/Elastic-hardening%20plastic%20Mohr-Coulomb%20model%20(a)%20yield%20locus%20and%20failure%20locus%20separating%20elastic%20plastic%20and%20inaccessible%20regions%20of%20stress%20plane%20(b)%20normality%20of%20pla.PNG" alt="Elastic-hardening plastic Mohr-Coulomb model (a) yield locus and failure locus separating elastic plastic and inaccessible regions of stress plane (b) normality applied at the plastic region" width="100%" />
+<p class="caption">
+Figure 1.6: Elastic-hardening plastic Mohr-Coulomb model (a) yield locus and failure locus separating elastic plastic and inaccessible regions of stress plane (b) normality applied at the plastic region
+</p>
+</div>
+</div>
+<div id="yield-function-1" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Yield function</h3>
+<p><span class="math display">\[
+F(\vec{\sigma}, \chi) = F(p&#39;,q,\chi)=q - \eta_y p&#39;=0
+\]</span></p>
+</div>
+<div id="plastic-potential-function-1" class="section level3" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Plastic potential function</h3>
+<p><span class="math display">\[
+G(\vec{\sigma}) = q-(M -M&#39;) p&#39; ln(\frac{p_r&#39;}{p&#39;})=0
+\]</span>
+, where
+<span class="math inline">\(\eta_{y,p}\)</span> is stress ratio at yield and peak, respectively,<br />
+<span class="math inline">\(p_r&#39;\)</span> is chosen s.t. plastic potential gradient passes through current stress, i.e.,<br />
+<span class="math inline">\(p_r&#39; = p&#39; exp \{ \frac{\eta_y}{M-M&#39;} \}\)</span><br />
+<span class="math inline">\(M\)</span> is material parameter at perfect plasticity when hardening terminates.<br />
+<span class="math inline">\(M = \frac{6 sin \phi}{3 - sin\phi}\)</span><br />
+<span class="math inline">\(M&#39;\)</span> is dilation at constant volume line:<br />
+<span class="math inline">\(M&#39; = \frac{6 sin \psi}{3 - sin\psi}\)</span><br />
+<span class="math inline">\(M&#39; = M - k \psi = M-k(v-\Gamma+\lambda lnp&#39;)\)</span><br />
+<span class="math inline">\(k\)</span> is soil constant linking state variable and strength.<br />
+Critical State description is as follows:<br />
+<span class="math inline">\(M&#39; = M - k [(v_0 - \Gamma + \lambda ln p_0&#39; + (\lambda ln \frac{p&#39;}{p_0&#39;}-v_0 \varepsilon_p^e)-v_0\varepsilon_p^p)]\)</span>.</p>
+</div>
+<div id="flow-rule" class="section level3" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> Flow rule</h3>
+<p><span class="math display">\[
+\frac{\delta \varepsilon_{p}^{p}}{\delta \varepsilon_{q}^{p}} = M -M&#39;- \eta_y
+\]</span></p>
+</div>
+<div id="hardening" class="section level3" number="1.3.5">
+<h3><span class="header-section-number">1.3.5</span> Hardening</h3>
+<p><span class="math display">\[
+\delta \eta_y = \frac{1-\frac{\eta_y}{M}}{\beta} \delta \varepsilon_q^p
+\]</span>
+, where<br />
+<span class="math inline">\(\beta\)</span> is a model parameter scaling plastic strain,<br />
+<span class="math inline">\(\beta = \frac{3}{2}p&#39; \frac{9-M}{9-(M-M&#39;)M ln2 - 3M&#39;} \frac{1-E_{50}/E_{ur}}{E_{50}}\)</span> for Taylor’s <span class="math inline">\(\sigma-\psi\)</span> relation.</p>
+<p>The incremental of the stress ratio is defined as:</p>
+<p><span class="math inline">\(\delta \eta_y = \frac{3 sin \delta \phi}{\sqrt{3}cos\theta+sin\theta sin\delta\phi}\)</span></p>
+</div>
+<div id="soil-parameters" class="section level3" number="1.3.6">
+<h3><span class="header-section-number">1.3.6</span> Soil Parameters</h3>
+<div id="elastic-moduli" class="section level4" number="1.3.6.1">
+<h4><span class="header-section-number">1.3.6.1</span> Elastic Moduli</h4>
+<p>The elastic moduli are estimated from the modified equation proposed by Hardin and Black (1968) in the case of sand:</p>
+<p><span class="math display">\[
+G = G_0 \frac{(2.17-e)^2}{1+e}\sqrt{p&#39;} \\
+K = \frac{1+\nu}{3(1-2 \nu)}G
+\]</span>
+, where<br />
+<span class="math inline">\(\nu\)</span> is Poisson’s ratio,<br />
+<span class="math inline">\(e\)</span> is void ratio,<br />
+<span class="math inline">\(G_0\)</span> is initial shear modulus.</p>
+</div>
+<div id="peak-friction-angle" class="section level4" number="1.3.6.2">
+<h4><span class="header-section-number">1.3.6.2</span> Peak friction angle</h4>
+<p>The peak friction angle of <span class="math inline">\(\phi_p\)</span> is estimated from the empirical relations proposed by Bolton (1987):</p>
+<p><span class="math display">\[
+I_r = D_r[5-ln(\frac{p&#39;}{150})]-1, \; (p&#39; \geq 150 kN/m^2) \\
+I_r = 5D_r -1 , \; (p&#39; &lt; 150 kN/m^2) \\ 
+\phi_p = 3I_r + \phi_r
+\]</span></p>
+</div>
+<div id="dilatency-angle" class="section level4" number="1.3.6.3">
+<h4><span class="header-section-number">1.3.6.3</span> Dilatency angle</h4>
+<p>The dilatency angle of <span class="math inline">\(\psi\)</span> is estimated from modified Rowe’s stress–dilatency relationship:</p>
+<p><span class="math display">\[
+sin\psi = \frac{sin\phi-sin\phi_r&#39;}{1-sin\phi sin\phi_r&#39;} \\
+\phi_r&#39; = \phi_r[1-\beta exp\{-(\frac{\chi}{\epsilon_d})^2\}]
+\]</span>
+, where<br />
+<span class="math inline">\(\beta\)</span> and <span class="math inline">\(\epsilon_d\)</span> are stress—dilatency material parameters.<br />
+<span class="math inline">\(E_{50}\)</span> is a secant modulus defined as:<br />
+<span class="math inline">\(E_{50} = \frac{\frac{1}{2}q_{u}}{\varepsilon_{a,50}}\)</span><br />
+<span class="math inline">\(E_{ur}\)</span> is unloading/reloading stiffness.</p>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="calibration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

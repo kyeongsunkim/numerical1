@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Comparison with Centrifuge Experiment | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</title>
+  <meta name="description" content="4 Comparison with Centrifuge Experiment | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Comparison with Centrifuge Experiment | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Comparison with Centrifuge Experiment | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  
+  
+  
+
+<meta name="author" content="Kyeong Sun Kim" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="result.html"/>
+<link rel="next" href="list-of-loaddisplacement-curves.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="templates/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="constitutive-model.html"><a href="constitutive-model.html"><i class="fa fa-check"></i><b>1</b> Constitutive Model</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#strainsoftening-stiffnesshardening-model"><i class="fa fa-check"></i><b>1.1</b> Strain—Softening Stiffness—Hardening Model</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function"><i class="fa fa-check"></i><b>1.1.1</b> Yield function</a></li>
+<li class="chapter" data-level="1.1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function"><i class="fa fa-check"></i><b>1.1.2</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening-function"><i class="fa fa-check"></i><b>1.1.3</b> Hardening function</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#nonassociated-flow-rule-na"><i class="fa fa-check"></i><b>1.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#extended-mohrcoulomb-model-emc"><i class="fa fa-check"></i><b>1.3</b> Extended Mohr—Coulomb Model (EMC)</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="constitutive-model.html"><a href="constitutive-model.html#comparison-between-associated-and-non-associated-flow-rule-in-plastic-model"><i class="fa fa-check"></i><b>1.3.1</b> Comparison between associated and non-associated flow rule in plastic model</a></li>
+<li class="chapter" data-level="1.3.2" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function-1"><i class="fa fa-check"></i><b>1.3.2</b> Yield function</a></li>
+<li class="chapter" data-level="1.3.3" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function-1"><i class="fa fa-check"></i><b>1.3.3</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.3.4" data-path="constitutive-model.html"><a href="constitutive-model.html#flow-rule"><i class="fa fa-check"></i><b>1.3.4</b> Flow rule</a></li>
+<li class="chapter" data-level="1.3.5" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening"><i class="fa fa-check"></i><b>1.3.5</b> Hardening</a></li>
+<li class="chapter" data-level="1.3.6" data-path="constitutive-model.html"><a href="constitutive-model.html#soil-parameters"><i class="fa fa-check"></i><b>1.3.6</b> Soil Parameters</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="calibration.html"><a href="calibration.html"><i class="fa fa-check"></i><b>2</b> Calibration and Validation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="calibration.html"><a href="calibration.html#drained-triaxial-test"><i class="fa fa-check"></i><b>2.1</b> Drained Triaxial Test</a></li>
+<li class="chapter" data-level="2.2" data-path="calibration.html"><a href="calibration.html#soil-parameters-1"><i class="fa fa-check"></i><b>2.2</b> Soil Parameters</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="calibration.html"><a href="calibration.html#strainsoftening-stiffnesshardening-model-1"><i class="fa fa-check"></i><b>2.2.1</b> Strain—Softening Stiffness—Hardening Model</a></li>
+<li class="chapter" data-level="2.2.2" data-path="calibration.html"><a href="calibration.html#nonassociated-flow-rule-na-1"><i class="fa fa-check"></i><b>2.2.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="2.2.3" data-path="calibration.html"><a href="calibration.html#extended-mohrcoulomb-model-emc-1"><i class="fa fa-check"></i><b>2.2.3</b> Extended Mohr—Coulomb Model (EMC)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="calibration.html"><a href="calibration.html#convergence-criteria"><i class="fa fa-check"></i><b>2.3</b> Convergence Criteria</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="calibration.html"><a href="calibration.html#mesh-convergence"><i class="fa fa-check"></i><b>2.3.1</b> Mesh Convergence</a></li>
+<li class="chapter" data-level="2.3.2" data-path="calibration.html"><a href="calibration.html#boundary-convergence"><i class="fa fa-check"></i><b>2.3.2</b> Boundary Convergence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="result.html"><a href="result.html"><i class="fa fa-check"></i><b>3</b> Results</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="result.html"><a href="result.html#parametric-study"><i class="fa fa-check"></i><b>3.1</b> Parametric Study</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="result.html"><a href="result.html#effect-of-embedment-depth-ratio-fracdb"><i class="fa fa-check"></i><b>3.1.1</b> Effect of Embedment Depth Ratio <span class="math inline">\(\frac{D}{B}\)</span></a></li>
+<li class="chapter" data-level="3.1.2" data-path="result.html"><a href="result.html#effect-of-width-b"><i class="fa fa-check"></i><b>3.1.2</b> Effect of Width <span class="math inline">\(B\)</span></a></li>
+<li class="chapter" data-level="3.1.3" data-path="result.html"><a href="result.html#shear-dissipation"><i class="fa fa-check"></i><b>3.1.3</b> Shear Dissipation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="result.html"><a href="result.html#comparison-with-previous-researchers"><i class="fa fa-check"></i><b>3.2</b> Comparison with Previous Researchers</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html"><i class="fa fa-check"></i><b>4</b> Comparison with Centrifuge Experiment</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#comparison-of-the-centrifuge-test-results-with-the-chosen-model"><i class="fa fa-check"></i><b>4.1</b> Comparison of the centrifuge test results with the chosen model</a></li>
+<li class="chapter" data-level="4.2" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#difference-with-the-anchor-theory"><i class="fa fa-check"></i><b>4.2</b> Difference with the anchor theory</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="list-of-loaddisplacement-curves.html"><a href="list-of-loaddisplacement-curves.html"><i class="fa fa-check"></i><b>A</b> List of Load—Displacement Curves</a></li>
+<li class="chapter" data-level="" data-path="references-references.html"><a href="references-references.html"><i class="fa fa-check"></i>(REFERENCES) References</a></li>
+<li class="chapter" data-level="B" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>B</b> REFERENCES</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><p>Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</p></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="comparison-with-centrifuge-experiment" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Comparison with Centrifuge Experiment</h1>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-34"></span>
+<img src="myfigureeeeee/numericaltestsetup.PNG" alt="Typical numerical test set-up" width="100%" />
+<p class="caption">
+Figure 4.1: Typical numerical test set-up
+</p>
+</div>
+<p>The goal is to find the best matching load—displacement curve by comparing the measurements with the models: EMC and NA.<br />
+In order to find the suitable pair of a set of variables, the values were varied by interpolating those in between the dense and the loose sands of the representative values from the example file provided by the software. The result is that for the EMC model, the set named B and C show a good match, whereas for the NA model, the set with H and G display a favorable fit. The chosen set of parameters are presented in the tables below:</p>
+<p>The table below show the KAIST centrifuge test set-up and the results.</p>
+<p>The table 4.4 shows the numerical test set-up, mainly for the dimensions corresponding the formulated in-house codes.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-35"></span>
+<img src="myfigureeeeee/typicalresult2.PNG" alt="Typical mesh of the numerical simulation; number of mesh = 5000" width="100%" />
+<p class="caption">
+Figure 4.2: Typical mesh of the numerical simulation; number of mesh = 5000
+</p>
+</div>
+<p>While the mesh convergence test on the plate anchor pull-out test showed that the number of mesh around 2000 are reasonable, the final mesh number was chosen to be 5000 for more detailed representation of the shear dissipation bands in the graphics.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-36"></span>
+<img src="myfigureeeeee/meshconvergence2.png" alt="Mesh convergence test for numerical simulations on the shallow foundations using two models: EMC and NA" width="100%" />
+<p class="caption">
+Figure 4.3: Mesh convergence test for numerical simulations on the shallow foundations using two models: EMC and NA
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-37"></span>
+<img src="myfigureeeeee/typicalresult.PNG" alt="Typical result of the numerical simulation; 1st decile of the shear dissipation (kJ)" width="100%" />
+<p class="caption">
+Figure 4.4: Typical result of the numerical simulation; 1st decile of the shear dissipation (kJ)
+</p>
+</div>
+<div id="results-of-numerical-analysis-for-finding-the-model-that-fits-the-centrifuge-loaddisplacement-curve" class="section level4" number="4.0.0.1">
+<h4><span class="header-section-number">4.0.0.1</span> Results of numerical analysis for finding the model that fits the centrifuge load—displacement curve</h4>
+<p>The following load—displacement curves were generated by varying not only the codes but also the model parameters. The data from total number of 80 simulations were accumulated to draw 8 plots with base numbers from 2 to 8, which represent the variation of the size of the footing width. In the plot below, the line with markers represent the NA model, whereas only those of the colored lines are the EMC models. It is noted that among 80 load—displacement curves, only 4 were selected for matching the dense and loose sand cases of the centrifuge test results.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-38"></span>
+<img src="myfigureeeeee/base2.PNG" alt="Code name base2; B=6.5m; B/D = 0.915" width="100%" />
+<p class="caption">
+Figure 4.5: Code name base2; B=6.5m; B/D = 0.915
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-39"></span>
+<img src="myfigureeeeee/base3.PNG" alt="Code name base3; B=6.5m; B/D = 0.615" width="100%" />
+<p class="caption">
+Figure 4.6: Code name base3; B=6.5m; B/D = 0.615
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-40"></span>
+<img src="myfigureeeeee/base4.PNG" alt="Code name base4; B=4.5m; B/D = 1.044" width="100%" />
+<p class="caption">
+Figure 4.7: Code name base4; B=4.5m; B/D = 1.044
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-41"></span>
+<img src="myfigureeeeee/base5.PNG" alt="Code name base5; B=4.5m; B/D = 0.744" width="100%" />
+<p class="caption">
+Figure 4.8: Code name base5; B=4.5m; B/D = 0.744
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-42"></span>
+<img src="myfigureeeeee/base6.PNG" alt="Code name base6; B=4.5m; B/D = 0.444" width="100%" />
+<p class="caption">
+Figure 4.9: Code name base6; B=4.5m; B/D = 0.444
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
+<img src="myfigureeeeee/base7.PNG" alt="Code name base7; B=3.5m; B/D = 1.314" width="100%" />
+<p class="caption">
+Figure 4.10: Code name base7; B=3.5m; B/D = 1.314
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-44"></span>
+<img src="myfigureeeeee/base8.PNG" alt="Code name base8; B=3.5m; B/D = 0.101" width="100%" />
+<p class="caption">
+Figure 4.11: Code name base8; B=3.5m; B/D = 0.101
+</p>
+</div>
+</div>
+<div id="determination-of-model-parameters" class="section level4" number="4.0.0.2">
+<h4><span class="header-section-number">4.0.0.2</span> Determination of model parameters</h4>
+<p>To evaluate the difference between the centrifuge test result and the model prediction, residual error was used:</p>
+<p><span class="math display">\[
+Error = \lvert \frac{y_{actual}-y_{estimated}}{y_{actual}}\lvert \times 100\% 
+\]</span>
+The goal is to find the model which best fits (or has the least error) the measured data.
+For the dense sand cases, Model C and H, whereas for the loose sand cases, Model B and G were chosen for the further studies.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-45"></span>
+<img src="myfigureeeeee/errormap_emc.png" alt="Heat-map of errors between cetrifuge test and model (dense cases); model C and H were selected among available 10 models" width="100%" />
+<p class="caption">
+Figure 4.12: Heat-map of errors between cetrifuge test and model (dense cases); model C and H were selected among available 10 models
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-46"></span>
+<img src="myfigureeeeee/errormap_emc2.png" alt="Heat-map of errors between cetrifuge test and model (loose cases); model B and G were selected among 10 available models" width="100%" />
+<p class="caption">
+Figure 4.13: Heat-map of errors between cetrifuge test and model (loose cases); model B and G were selected among 10 available models
+</p>
+</div>
+</div>
+<div id="comparison-of-the-centrifuge-test-results-with-the-chosen-model" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Comparison of the centrifuge test results with the chosen model</h2>
+<p>The bar-chart was drawn to show the performance of the prediction of the EMC and NA models with the centrifuge test results:</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
+<img src="myfigureeeeee/barchart1.png" alt="Bar-chart of centrifuge test and model (all cases); from left to right, 1: B=6.5m,D/B=1.3; 2: B=6.5m,D/B=1; 3: B=4.5m,D/B=1.3; 4: B=4.5m,D/B=1; 5: B=3.5m,D/B=1.6; 6: B=6.5m,D/B=1.3; 7: B=6.5m,D/B=1; 8: B=4.5m,D/B=1.6; 9: B=4.5m,D/B=1.3; 10: B=4.5m,D/B=1; 11: B=3.5m,D/B=1.6; 12: B=3.5m,D/B=1.3" width="100%" />
+<p class="caption">
+Figure 4.14: Bar-chart of centrifuge test and model (all cases); from left to right, 1: B=6.5m,D/B=1.3; 2: B=6.5m,D/B=1; 3: B=4.5m,D/B=1.3; 4: B=4.5m,D/B=1; 5: B=3.5m,D/B=1.6; 6: B=6.5m,D/B=1.3; 7: B=6.5m,D/B=1; 8: B=4.5m,D/B=1.6; 9: B=4.5m,D/B=1.3; 10: B=4.5m,D/B=1; 11: B=3.5m,D/B=1.6; 12: B=3.5m,D/B=1.3
+</p>
+</div>
+<div id="result-of-loaddisplacement-curves-of-the-centrifuge-measurement-with-emc-and-na-models" class="section level4" number="4.1.0.1">
+<h4><span class="header-section-number">4.1.0.1</span> Result of load—displacement curves of the centrifuge measurement with EMC and NA models</h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
+<img src="myfigureeeeee/Comparison_of_centrifuge_data_with_EMC_and_NA_models.png" alt="Comparison of centrifuge data with EMC and NA models" width="100%" />
+<p class="caption">
+Figure 4.15: Comparison of centrifuge data with EMC and NA models
+</p>
+</div>
+</div>
+</div>
+<div id="difference-with-the-anchor-theory" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Difference with the anchor theory</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
+<img src="myfigureeeeee/foundation_drawing1.png" alt="Schematic of typical shallow foundation" width="70%" />
+<p class="caption">
+Figure 4.16: Schematic of typical shallow foundation
+</p>
+</div>
+<p>Dimensionless uplift capacity factor can be defined as the ratio of the ultimate uplift capacity to the soil encapsulated above the plate which lay inside the failure surface.</p>
+<p><span class="math display">\[
+N_q = \frac{Q_u}{\gamma AD}
+\]</span>
+where <span class="math inline">\(A\)</span> is area above the slab plate and can be calculated as <span class="math inline">\(A=B^2 - \pi b_{shaft}^2\)</span>.</p>
+<div id="effect-of-shaft-diameter-on-dimensionless-uplift-capacity-factor" class="section level4" number="4.2.0.1">
+<h4><span class="header-section-number">4.2.0.1</span> Effect of shaft diameter on dimensionless uplift capacity factor</h4>
+<p>For purpose of demonstrating difference between the anchor theory and that for the shallow foundations, dimensionless parameters were defined:</p>
+<p><span class="math display">\[
+\lambda := \frac{b_{shaft}}{B}
+\]</span></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
+<img src="myfigureeeeee/comparison_mu_1.png" alt="Comparison of theoretical and numerical models" width="100%" />
+<p class="caption">
+Figure 4.17: Comparison of theoretical and numerical models
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-51"></span>
+<img src="myfigureeeeee/comparison_mu_2.png" alt="Comparison of theoretical and numerical models (variation on shaft diameter)" width="100%" />
+<p class="caption">
+Figure 4.18: Comparison of theoretical and numerical models (variation on shaft diameter)
+</p>
+</div>
+</div>
+<div id="effect-of-thickness-on-dimensionless-uplift-capacity-factor" class="section level4" number="4.2.0.2">
+<h4><span class="header-section-number">4.2.0.2</span> Effect of thickness on dimensionless uplift capacity factor</h4>
+<p><span class="math display">\[
+\mu := \frac{t_{plate}}{B}
+\]</span></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-52"></span>
+<img src="myfigureeeeee/comparison_mu_3.png" alt="Comparison of theoretical and numerical models (variation on thickness)" width="100%" />
+<p class="caption">
+Figure 4.19: Comparison of theoretical and numerical models (variation on thickness)
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="result.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="list-of-loaddisplacement-curves.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

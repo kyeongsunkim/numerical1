@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Calibration and Validation | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</title>
+  <meta name="description" content="2 Calibration and Validation | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Calibration and Validation | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Calibration and Validation | Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model" />
+  
+  
+  
+
+<meta name="author" content="Kyeong Sun Kim" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="constitutive-model.html"/>
+<link rel="next" href="result.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="templates/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="constitutive-model.html"><a href="constitutive-model.html"><i class="fa fa-check"></i><b>1</b> Constitutive Model</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#strainsoftening-stiffnesshardening-model"><i class="fa fa-check"></i><b>1.1</b> Strain—Softening Stiffness—Hardening Model</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function"><i class="fa fa-check"></i><b>1.1.1</b> Yield function</a></li>
+<li class="chapter" data-level="1.1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function"><i class="fa fa-check"></i><b>1.1.2</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening-function"><i class="fa fa-check"></i><b>1.1.3</b> Hardening function</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="constitutive-model.html"><a href="constitutive-model.html#nonassociated-flow-rule-na"><i class="fa fa-check"></i><b>1.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="1.3" data-path="constitutive-model.html"><a href="constitutive-model.html#extended-mohrcoulomb-model-emc"><i class="fa fa-check"></i><b>1.3</b> Extended Mohr—Coulomb Model (EMC)</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="constitutive-model.html"><a href="constitutive-model.html#comparison-between-associated-and-non-associated-flow-rule-in-plastic-model"><i class="fa fa-check"></i><b>1.3.1</b> Comparison between associated and non-associated flow rule in plastic model</a></li>
+<li class="chapter" data-level="1.3.2" data-path="constitutive-model.html"><a href="constitutive-model.html#yield-function-1"><i class="fa fa-check"></i><b>1.3.2</b> Yield function</a></li>
+<li class="chapter" data-level="1.3.3" data-path="constitutive-model.html"><a href="constitutive-model.html#plastic-potential-function-1"><i class="fa fa-check"></i><b>1.3.3</b> Plastic potential function</a></li>
+<li class="chapter" data-level="1.3.4" data-path="constitutive-model.html"><a href="constitutive-model.html#flow-rule"><i class="fa fa-check"></i><b>1.3.4</b> Flow rule</a></li>
+<li class="chapter" data-level="1.3.5" data-path="constitutive-model.html"><a href="constitutive-model.html#hardening"><i class="fa fa-check"></i><b>1.3.5</b> Hardening</a></li>
+<li class="chapter" data-level="1.3.6" data-path="constitutive-model.html"><a href="constitutive-model.html#soil-parameters"><i class="fa fa-check"></i><b>1.3.6</b> Soil Parameters</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="calibration.html"><a href="calibration.html"><i class="fa fa-check"></i><b>2</b> Calibration and Validation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="calibration.html"><a href="calibration.html#drained-triaxial-test"><i class="fa fa-check"></i><b>2.1</b> Drained Triaxial Test</a></li>
+<li class="chapter" data-level="2.2" data-path="calibration.html"><a href="calibration.html#soil-parameters-1"><i class="fa fa-check"></i><b>2.2</b> Soil Parameters</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="calibration.html"><a href="calibration.html#strainsoftening-stiffnesshardening-model-1"><i class="fa fa-check"></i><b>2.2.1</b> Strain—Softening Stiffness—Hardening Model</a></li>
+<li class="chapter" data-level="2.2.2" data-path="calibration.html"><a href="calibration.html#nonassociated-flow-rule-na-1"><i class="fa fa-check"></i><b>2.2.2</b> Nonassociated Flow Rule (NA)</a></li>
+<li class="chapter" data-level="2.2.3" data-path="calibration.html"><a href="calibration.html#extended-mohrcoulomb-model-emc-1"><i class="fa fa-check"></i><b>2.2.3</b> Extended Mohr—Coulomb Model (EMC)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="calibration.html"><a href="calibration.html#convergence-criteria"><i class="fa fa-check"></i><b>2.3</b> Convergence Criteria</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="calibration.html"><a href="calibration.html#mesh-convergence"><i class="fa fa-check"></i><b>2.3.1</b> Mesh Convergence</a></li>
+<li class="chapter" data-level="2.3.2" data-path="calibration.html"><a href="calibration.html#boundary-convergence"><i class="fa fa-check"></i><b>2.3.2</b> Boundary Convergence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="result.html"><a href="result.html"><i class="fa fa-check"></i><b>3</b> Results</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="result.html"><a href="result.html#parametric-study"><i class="fa fa-check"></i><b>3.1</b> Parametric Study</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="result.html"><a href="result.html#effect-of-embedment-depth-ratio-fracdb"><i class="fa fa-check"></i><b>3.1.1</b> Effect of Embedment Depth Ratio <span class="math inline">\(\frac{D}{B}\)</span></a></li>
+<li class="chapter" data-level="3.1.2" data-path="result.html"><a href="result.html#effect-of-width-b"><i class="fa fa-check"></i><b>3.1.2</b> Effect of Width <span class="math inline">\(B\)</span></a></li>
+<li class="chapter" data-level="3.1.3" data-path="result.html"><a href="result.html#shear-dissipation"><i class="fa fa-check"></i><b>3.1.3</b> Shear Dissipation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="result.html"><a href="result.html#comparison-with-previous-researchers"><i class="fa fa-check"></i><b>3.2</b> Comparison with Previous Researchers</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html"><i class="fa fa-check"></i><b>4</b> Comparison with Centrifuge Experiment</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#comparison-of-the-centrifuge-test-results-with-the-chosen-model"><i class="fa fa-check"></i><b>4.1</b> Comparison of the centrifuge test results with the chosen model</a></li>
+<li class="chapter" data-level="4.2" data-path="comparison-with-centrifuge-experiment.html"><a href="comparison-with-centrifuge-experiment.html#difference-with-the-anchor-theory"><i class="fa fa-check"></i><b>4.2</b> Difference with the anchor theory</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="list-of-loaddisplacement-curves.html"><a href="list-of-loaddisplacement-curves.html"><i class="fa fa-check"></i><b>A</b> List of Load—Displacement Curves</a></li>
+<li class="chapter" data-level="" data-path="references-references.html"><a href="references-references.html"><i class="fa fa-check"></i>(REFERENCES) References</a></li>
+<li class="chapter" data-level="B" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>B</b> REFERENCES</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><p>Uplift Resistance of Anchor Plate Using Extended Mohr-Coulomb Model</p></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="calibration" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Calibration and Validation</h1>
+<p><!-- this will include a mini table of contents-->
+For the validity of the finite element tests performed, the triaxial elemental test is siumlated with the box of union length. The set up is as follows:</p>
+<div id="drained-triaxial-test" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Drained Triaxial Test</h2>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="myfigureeeeee/triaxial%20test.PNG" alt="Typical triaxial test (After Krabbenhoft, 2013)" width="100%" />
+<p class="caption">
+Figure 2.1: Typical triaxial test (After Krabbenhoft, 2013)
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-9"></span>
+<img src="myfigureeeeee/typical%20shear-volumetric%20strain%20behavior%20in%20triaxial%20compression.PNG" alt="Typical shear-volumetric strain behavior in triaxial compression (After Krabbenhoft, 2013)" width="100%" />
+<p class="caption">
+Figure 2.2: Typical shear-volumetric strain behavior in triaxial compression (After Krabbenhoft, 2013)
+</p>
+</div>
+<p>Two tests — Triaxial compression and extension (TC/TE) — are simulated using Multiplier Elasto—plastic analysis under axisymmetric conditions as indicated in the Figure below.
+The fixed loads here represent the initial axial and radial stresses while the axial Multiplier load is increased in the course of the analysis to reach the ultimate limit state.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-10"></span>
+<img src="myfigureeeeee/setup%20for%20TC%20and%20TE.PNG" alt="Setup for elemental triaxial compression and extension" width="100%" />
+<p class="caption">
+Figure 2.3: Setup for elemental triaxial compression and extension
+</p>
+</div>
+<p>By a process of trial and error, the fits shown in Figure are obtained. For this data set , where no information about the behavior in simple shear is available the value is well within range that can be accommodated by the isotropic strength option, there is little reason to assume any anisotropy.
+We note that the compression secant modulus in compression is only half of the extension secant modulus. This is somewhat unusual, but in this case nevertheless what fits the data best.</p>
+<div id="result-of-elemental-triaxial-test-at-100-kpa" class="section level4" number="2.1.0.1">
+<h4><span class="header-section-number">2.1.0.1</span> Result of Elemental Triaxial Test at 100 kPa</h4>
+<p>Triaxial test at radial stress of 100 kPa is simulated using one by one block of the finite elmeent formulation with the EMC model.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-11"></span>
+<img src="myfigureeeeee/100.png" alt="Result of Drained Triaxial test at 100 kPa" width="100%" />
+<p class="caption">
+Figure 2.4: Result of Drained Triaxial test at 100 kPa
+</p>
+</div>
+</div>
+<div id="result-of-elemental-triaxial-test-at-200-kpa" class="section level4" number="2.1.0.2">
+<h4><span class="header-section-number">2.1.0.2</span> Result of Elemental Triaxial Test at 200 kPa</h4>
+<p>Triaxial test at radial stress of 200 kPa is simulated using one by one block of the finite elmeent formulation with the EMC model.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-12"></span>
+<img src="myfigureeeeee/200.png" alt="Result of Drained Triaxial test at 200 kPa" width="100%" />
+<p class="caption">
+Figure 2.5: Result of Drained Triaxial test at 200 kPa
+</p>
+</div>
+</div>
+</div>
+<div id="soil-parameters-1" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Soil Parameters</h2>
+<div id="strainsoftening-stiffnesshardening-model-1" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Strain—Softening Stiffness—Hardening Model</h3>
+<p>Here is a table presenting the model parameters used by Sakai and Tanaka (1993).</p>
+</div>
+<div id="nonassociated-flow-rule-na-1" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Nonassociated Flow Rule (NA)</h3>
+<p>Here is a table presenting the model parameters used in Nonassociated (NA) simulations.</p>
+</div>
+<div id="extended-mohrcoulomb-model-emc-1" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Extended Mohr—Coulomb Model (EMC)</h3>
+<p>Here is a table presenting the model parameters used in Extended Mohr-Coulomb (EMC) simulations.</p>
+</div>
+</div>
+<div id="convergence-criteria" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Convergence Criteria</h2>
+<div id="mesh-convergence" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Mesh Convergence</h3>
+<p>Here is a table presenting the result of mesh convergence test on both NA and EMC models.<br />
+The goal of the mesh convergence test usually is to seek the acceptable range of number of the mesh size.
+However, the interest in the present paper differs from the previously investigated objectives, in a way that the object sought is not the same.<br />
+The present paper seeks to draw a more detailed analysis of the failure surface formed as the soil is sheared.<br />
+Some authors in the past described this with the width of the shear band (Tanaka and Sakai, 1993). However, the present paper deals only with the limit analysis formulation using the Extended Mohr-Coulomb model.</p>
+<div id="mesh-convergence-results" class="section level4" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Mesh Convergence Results</h4>
+<p>The reulst of the present investigation is the determination of the number of the mesh elements be around 2000.<br />
+However, it is noted that further studies, outside of this paper, is onto the maximum number of the elements to be studied, for this will enhance the visualization of the shear band formation, as well as the guidance onto the study of the shear dissipation.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-13"></span>
+<img src="myfigureeeeee/20000.PNG" alt="Typical result from mesh convergence test (maximum number of elements)" width="100%" />
+<p class="caption">
+Figure 2.6: Typical result from mesh convergence test (maximum number of elements)
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-14"></span>
+<img src="myfigureeeeee/meshresult.png" alt="Result of the mesh convergence test, which confirms that about 2000 elements are acceptable" width="100%" />
+<p class="caption">
+Figure 2.7: Result of the mesh convergence test, which confirms that about 2000 elements are acceptable
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-15"></span>
+<img src="myfigureeeeee/1.png" alt="Shear Dissipation of the mesh convergence test of 250, 500, 2000 elements" width="100%" />
+<p class="caption">
+Figure 2.8: Shear Dissipation of the mesh convergence test of 250, 500, 2000 elements
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
+<img src="myfigureeeeee/4.png" alt="Mesh of 250, 500, 2000 elements" width="100%" />
+<p class="caption">
+Figure 2.9: Mesh of 250, 500, 2000 elements
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-17"></span>
+<img src="myfigureeeeee/2.png" alt="Shear Dissipation of the mesh convergence test of 5000, 10000, 20000 elements" width="100%" />
+<p class="caption">
+Figure 2.10: Shear Dissipation of the mesh convergence test of 5000, 10000, 20000 elements
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<img src="myfigureeeeee/3.png" alt="Mesh of 5000, 10000, 20000 elements" width="100%" />
+<p class="caption">
+Figure 2.11: Mesh of 5000, 10000, 20000 elements
+</p>
+</div>
+</div>
+</div>
+<div id="boundary-convergence" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Boundary Convergence</h3>
+<p>The soil tank width and the distance below the anchor to the soil tank boundary are the primary condern for the modeling.<br />
+Therefore, the optimized value of the soil tank width has been investigated, by differing the values from 10B to 3B, , wherein B refers to the width of the anchor plate.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-19"></span>
+<img src="myfigureeeeee/boundary.PNG" alt="Convergence test setup on different boundary size: (a) 10B, (b) 7B, (c) 5B, (d) 3B" width="100%" />
+<p class="caption">
+Figure 2.12: Convergence test setup on different boundary size: (a) 10B, (b) 7B, (c) 5B, (d) 3B
+</p>
+</div>
+<p>Due to the reasoning which considers the method of mesh adaptivity, insignificant effect onto the extension of the soil tank width has been deemed acceptable by the author. Therefore, the result of the boundary convergence test is determined at 10B.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-20"></span>
+<img src="myfigureeeeee/boundary%20convergence2.PNG" alt="Final boundary decision schematic for numerical simulations" width="100%" />
+<p class="caption">
+Figure 2.13: Final boundary decision schematic for numerical simulations
+</p>
+</div>
+<p>Here is a table presenting the setup of boundary convergence test on both NA and EMC models.</p>
+<div id="boundary-convergence-results" class="section level4" number="2.3.2.1">
+<h4><span class="header-section-number">2.3.2.1</span> Boundary Convergence Results</h4>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="constitutive-model.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="result.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
